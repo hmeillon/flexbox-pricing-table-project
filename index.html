@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 95vh;
+      gap: 25px;
+    }
+
+    .pricing-plan {
+      background-color: rgb(27, 34, 34);
+      width: 300px;
+      max-width: 400px;
+      border-radius: 3%;
+      color: greenyellow;
+      box-shadow: 10px 10px 10px rgb(88, 87, 87);
+      border: 0.1px solid greenyellow;
+      padding: 20px;
+    }
+
+    .plan-title {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(27, 34, 34);
+      background: linear-gradient(to right, rgb(57, 78, 26), greenyellow);
+      position: relative;
+      top: 10px;
+      width: 60%;
+      left: 58px;
+      padding: 3px;
+      border-radius: 5px;
+    }
+
+    .plan-price {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .plan-button {
+      position: relative;
+      left: 120px;
+      background-color: yellowgreen;
+      color: rgb(27, 34, 34);
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 2px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <br />
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 10GB Storage</li>
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 1 User</li>
+        <li><img src="https://www.freeiconspng.com/uploads/delete-error-exit-remove-stop-x-cross-icon--28.png" height="20px" alt="red x cross icon "/> Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <br />
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 50GB Storage</li>
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 5 Users</li>
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <br />
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 100GB Storage</li>
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 10 Users</li>
+        <li><img src="https://www.freeiconspng.com/uploads/accept-tick-icon-12.png" alt="accept" height="20px"> 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
